@@ -1,0 +1,17 @@
+
+//wrapping this in a function to be able to reuse the code
+function fizzBuzz(someNumber){  //takes a number
+for(let i = 1; i <= someNumber; i++){
+    if( i % 3 === 0 && i % 5 === 0 ){
+        console.log("FizzBizz");
+    }
+    else if (i % 3 === 0){  //else if and else also work but I think they aren't preferred. 
+        console.log("Fizz");
+    }
+    else if (i % 5 === 0){
+        console.log("Buzz");
+    }
+    else {
+        console.log("Value of i is " + i);
+    }
+  }
