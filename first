@@ -1,0 +1,19 @@
+
+// for loops iterate thru the specified number of times incrementing each time.
+
+for( let i = 1; i <= 100; i++){    //var is no longer recommended, use let or const if it won't change
+    if (i % 3 === 0){              //modulus operator looks for leftovers, if there is 0 left over print fizz
+        console.log ("Fizz");
+    }
+    if (i % 5 === 0 ){             //modulus operator looks for leftovers, if there is 0 left over print buzz
+        console.log ("Buzz");
+    }
+    if( (i % 3 === 0) && (i % 5 === 0)){      // if both are true then print fizzbuzz
+        console.log("FizzBuzz");
+    }
+    if((i % 3 !==0) && (i % 5 !==0) ) {      //if both are NOT true then print the number i
+        console.log(i);
+    }
+}
+
+
